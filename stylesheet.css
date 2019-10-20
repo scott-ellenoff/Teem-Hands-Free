@@ -1,0 +1,55 @@
+.react{
+    width: 200px;
+}
+.ui.button.send{
+    position: absolute;
+    top:40%;
+    left:40%;
+    width: 20%;
+    height:15%;
+}
+img.send{
+    width:120px
+}
+.angry{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 30%;
+    height: 25%
+}
+.wow{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    width: 30%;
+    height: 25%
+}
+.sad{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 30%;
+    height: 25%
+}
+.like{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    width: 30%;
+    height: 25%
+}
+.laugh{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 30%;
+    height: 25%
+}
+.love{
+    position: absolute;
+    top: 2%;
+    left: 65%;
+    width: 30%;
+    height: 25%
+}
