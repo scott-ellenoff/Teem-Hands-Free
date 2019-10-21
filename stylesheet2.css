@@ -1,0 +1,14 @@
+.ui.button.choose{
+    position: absolute;
+    top:40%;
+    left:40%;
+    width: 20%;
+    height:15%;
+}
+.ui.button.send{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 20%;
+    height:15%;
+}

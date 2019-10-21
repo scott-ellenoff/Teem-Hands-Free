@@ -1,6 +1,11 @@
 .react{
     width: 200px;
 }
+.ui.button.start{
+    position: absolute;
+    top:40%;
+    left:40%;
+}
 .ui.button.send{
     position: absolute;
     top:40%;
