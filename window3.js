@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(".choose").bind("touchstart", function(){
         $(".choose").trigger('click');
     });
-    $(".choose").on("click",function(){
+    $(".choose").on("click touchstart",function(){
         if($(this).val() == "angry"){
             choice = "angry";
             window.navigator.vibrate([200,200]);
