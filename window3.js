@@ -9,41 +9,54 @@ function sleep(milliseconds) {
 }
 $(document).ready(function(){
     var choice = "";
+    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     $(".choose").on("touch", function(){
         alert("touch");
         if($(this).val() == "angry"){
             choice = "angry";
-            window.navigator.vibrate([200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".wow").toggle();
             $(".angry").hide();
         }
         else if($(this).val() == "wow"){
             choice = "wow";
-            window.navigator.vibrate([200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".sad").toggle();
             $(".wow").hide();
         }
         else if($(this).val() == "sad"){
             choice = "sad";
-            window.navigator.vibrate([200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".like").toggle();
             $(".sad").hide();
         }
         if($(this).val() == "like"){
             choice = "like";
-            window.navigator.vibrate([200,200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".love").toggle();
             $(".like").hide();
         }
         if($(this).val() == "love"){
             choice = "love";
-            window.navigator.vibrate([200,200,200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".laugh").toggle();
             $(".love").hide();
         }
         if($(this).val() == "laugh"){
             choice = "laugh";
-            window.navigator.vibrate([200,200,200,200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".cancel").toggle();
             $(".laugh").hide();
         }
@@ -56,37 +69,48 @@ $(document).ready(function(){
     $(".choose").on("click",function(){
         if($(this).val() == "angry"){
             choice = "angry";
-            window.navigator.vibrate([200,200]);
-            $(".wow").toggle();
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }            $(".wow").toggle();
             $(".angry").hide();
         }
         else if($(this).val() == "wow"){
             choice = "wow";
-            window.navigator.vibrate([200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".sad").toggle();
             $(".wow").hide();
         }
         else if($(this).val() == "sad"){
             choice = "sad";
-            window.navigator.vibrate([200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".like").toggle();
             $(".sad").hide();
         }
         if($(this).val() == "like"){
             choice = "like";
-            window.navigator.vibrate([200,200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".love").toggle();
             $(".like").hide();
         }
         if($(this).val() == "love"){
             choice = "love";
-            window.navigator.vibrate([200,200,200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".laugh").toggle();
             $(".love").hide();
         }
         if($(this).val() == "laugh"){
             choice = "laugh";
-            window.navigator.vibrate([200,200,200,200,200,200,200]);
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
             $(".cancel").toggle();
             $(".laugh").hide();
         }
