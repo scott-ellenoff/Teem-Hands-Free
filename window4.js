@@ -8,8 +8,8 @@ function sleep(milliseconds) {
   }
 $(document).ready(function(){
     $(".start").click(function(){
+        $(".start").hide();
         for(i=0; i<6; i++){
-            sleep(10000);
             var rand = Math.ceil(Math.random()*5+1)
             if(rand == 1.0){
                 window.navigator.vibrate([500,100,500,100,500]);
@@ -35,7 +35,7 @@ $(document).ready(function(){
                 console.log("laugh"+i);
                 window.navigator.vibrate([100,200,100,200,500]);
             }
+            sleep(10000);
         }
-        $(".start").hide();
     });
 });
