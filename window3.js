@@ -11,7 +11,7 @@ $(document).ready(function(){
     var choice = "";
     var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     $(".choose").on("touch", function(){
-        alert("touch");
+        alert(ios);
         if($(this).val() == "angry"){
             choice = "angry";
             if(!ios){
