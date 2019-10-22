@@ -9,7 +9,7 @@ function sleep(milliseconds) {
 }
 $(document).ready(function(){
     var choice = "";
-    $(".choose").bind("touch", function(){
+    $(".choose").on("touch", function(){
         if($(this).val() == "angry"){
             choice = "angry";
             window.navigator.vibrate([200,200]);
