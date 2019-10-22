@@ -9,33 +9,17 @@ function sleep(milliseconds) {
 $(document).ready(function(){
     $(".start").click(function(){
         $(".start").hide();
-        for(i=0; i<6; i++){
-            var rand = Math.ceil(Math.random()*5+1)
-            if(rand == 1.0){
-                window.navigator.vibrate([500,100,500,100,500]);
-                console.log("wow"+i);
-            }
-            else if(rand == 2.0){
-                console.log("like"+i);
-                window.navigator.vibrate([500,100,100,500,500]);
-            }
-            else if(rand == 3.0){
-                console.log("love"+i);
-                window.navigator.vibrate([500,500,500,500,500]);
-            }
-            else if(rand == 4.0){
-                console.log("angry"+i);
-                window.navigator.vibrate([100,500,100,500,100]);
-            }
-            else if(rand == 5.0){
-                console.log("sad"+i);
-                window.navigator.vibrate([500,500,500,100,100]);
-            }
-            else if(rand == 6.0){
-                console.log("laugh"+i);
-                window.navigator.vibrate([100,200,100,200,500]);
-            }
-            sleep(10000);
-        }
+        window.navigator.vibrate([1000]);
+        sleep(10000);
+        window.navigator.vibrate([2500]);
+        sleep(10000);
+        window.navigator.vibrate([500]);
+        sleep(10000);
+        window.navigator.vibrate([1500]);
+        sleep(10000);
+        window.navigator.vibrate([3000]);
+        sleep(10000);
+        window.navigator.vibrate([2000]);
+        sleep(10000);
     });
 });
