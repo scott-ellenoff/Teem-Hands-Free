@@ -9,7 +9,7 @@ function sleep(milliseconds) {
 }
 $(document).ready(function(){
     var choice = "";
-    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    var ios = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     $(".choose").on("touch", function(){
         alert(ios);
         if($(this).val() == "angry"){
