@@ -12,31 +12,15 @@ $(document).ready(function(){
     var ios = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     $(".choose").on("touch", function(){
         alert(ios);
-        if($(this).val() == "angry"){
-            choice = "angry";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".wow").toggle();
-            $(".angry").hide();
-        }
-        else if($(this).val() == "wow"){
+        if($(this).val() == "wow"){
             choice = "wow";
             if(!ios){
                 window.navigator.vibrate([200,200]);
             }
-            $(".sad").toggle();
+            $(".like").toggle();
             $(".wow").hide();
         }
-        else if($(this).val() == "sad"){
-            choice = "sad";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".like").toggle();
-            $(".sad").hide();
-        }
-        if($(this).val() == "like"){
+        else if($(this).val() == "like"){
             choice = "like";
             if(!ios){
                 window.navigator.vibrate([200,200]);
@@ -44,13 +28,29 @@ $(document).ready(function(){
             $(".love").toggle();
             $(".like").hide();
         }
-        if($(this).val() == "love"){
+        else if($(this).val() == "love"){
             choice = "love";
             if(!ios){
                 window.navigator.vibrate([200,200]);
             }
-            $(".laugh").toggle();
+            $(".angry").toggle();
             $(".love").hide();
+        }
+        if($(this).val() == "angry"){
+            choice = "angry";
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
+            $(".sad").toggle();
+            $(".angry").hide();
+        }
+        if($(this).val() == "sad"){
+            choice = "sad";
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
+            $(".laugh").toggle();
+            $(".sad").hide();
         }
         if($(this).val() == "laugh"){
             choice = "laugh";
@@ -62,35 +62,21 @@ $(document).ready(function(){
         }
         if($(this).val() == "cancel"){
             choice = "";
-            $(".angry").toggle();
+            $(".wow").toggle();
             $(".cancel").hide();
         }
     });
-    $(".choose").on("click",function(){
-        if($(this).val() == "angry"){
-            choice = "angry";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }            $(".wow").toggle();
-            $(".angry").hide();
-        }
-        else if($(this).val() == "wow"){
+    $(".choose").on("click", function(){
+        alert(ios);
+        if($(this).val() == "wow"){
             choice = "wow";
             if(!ios){
                 window.navigator.vibrate([200,200]);
             }
-            $(".sad").toggle();
+            $(".like").toggle();
             $(".wow").hide();
         }
-        else if($(this).val() == "sad"){
-            choice = "sad";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".like").toggle();
-            $(".sad").hide();
-        }
-        if($(this).val() == "like"){
+        else if($(this).val() == "like"){
             choice = "like";
             if(!ios){
                 window.navigator.vibrate([200,200]);
@@ -98,13 +84,29 @@ $(document).ready(function(){
             $(".love").toggle();
             $(".like").hide();
         }
-        if($(this).val() == "love"){
+        else if($(this).val() == "love"){
             choice = "love";
             if(!ios){
                 window.navigator.vibrate([200,200]);
             }
-            $(".laugh").toggle();
+            $(".angry").toggle();
             $(".love").hide();
+        }
+        if($(this).val() == "angry"){
+            choice = "angry";
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
+            $(".sad").toggle();
+            $(".angry").hide();
+        }
+        if($(this).val() == "sad"){
+            choice = "sad";
+            if(!ios){
+                window.navigator.vibrate([200,200]);
+            }
+            $(".laugh").toggle();
+            $(".sad").hide();
         }
         if($(this).val() == "laugh"){
             choice = "laugh";
@@ -116,7 +118,7 @@ $(document).ready(function(){
         }
         if($(this).val() == "cancel"){
             choice = "";
-            $(".angry").toggle();
+            $(".wow").toggle();
             $(".cancel").hide();
         }
     });
