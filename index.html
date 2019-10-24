@@ -1,0 +1,132 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1.0,user-scalable=no">
+
+    <title>Receiving Training A</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>Receiving Training A</h1>
+        </div>
+
+        <div id="unsupported">
+            <p>Your browser does not support the Vibration API.</p>
+        </div>
+
+        <div id="supported" class="row">
+            <div class="col-xs-12 col-sm-6">
+                <button id="like"><img src = "images/like.jpg"> </button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <button id="love"><img src = "images/love.jpg"> </button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <button id="haha"><img src = "images/haha.jpg"> </button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <button id="wow"><img src = "images/wow.jpg"> </button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <button id="sad"><img src = "images/sad.jpg"> </button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <button id="angry"><img src = "images/angry.jpg"> </button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+               <button id="stop" type="button" class="btn btn-danger btn-lg btn-block">Stop All Vibrations</button>
+           </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+
+            // Determine if vibration is supported in this web browser
+            if (!navigator.vibrate) {
+                $('#supported').hide();
+                return;
+            }
+
+            $('#unsupported').hide();
+
+            // like
+            $('#like').click(function () {
+                navigator.vibrate(300);
+            });
+
+            // love
+            $('#love').click(function () {
+                navigator.vibrate([300, 100, 300]);
+            });
+
+            //haha
+            $('#haha').click(function () {
+                navigator.vibrate([300, 100, 300, 100, 300]);
+            });
+            // wow
+            $('#wow').click(function () {
+                navigator.vibrate([300, 100, 300, 100, 300, 100, 300]);
+            });
+
+            //sad
+            $('#sad').click(function () {
+                navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300]);
+            });
+            //sad
+            $('#angry').click(function () {
+                navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300, 100, 300]);
+            });
+
+            // Stop all vibration
+            $('#stop').click(function () {
+                navigator.vibrate(0);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>training A</title>
+  </head>
+  <body>
+    <header>
+      <h1> Reciving Training A</h1>
+    </header>
+    <div class="emojis">
+      <div class="emoji">
+        <img src="images/like.jpg" alt="">
+      </div>
+
+      <div class="emoji">
+    <button id="one"><img src = "images/like.jpg"> </button>
+      </div>
+
+
+      <div class="emoji">
+        <img src="images/haha.jpg" alt="">
+      </div>
+      <div class="emoji">
+        <img src="images/wow.jpg" alt="">
+      </div>
+      <div class="emoji">
+        <img src="images/sad.jpg" alt="">
+      </div>
+      <div class="emoji">
+        <img src="images/angry.jpg" alt="">
+      </div>
+  </body>
+</html>
