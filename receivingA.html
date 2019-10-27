@@ -1,0 +1,51 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1.0,user-scalable=no">
+
+    <title>Receiving Training A</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="page-header">
+            <h1>Receiving A</h1>
+    </div>
+    <div>
+    <button class="ui button start">Start</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+    $(".start").click(function(){
+        $(".start").hide();
+        window.navigator.vibrate([300]);  //like
+        setTimeout(function(){
+            window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300]); //sad
+            setTimeout(() => {
+                window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300]); //wow
+                setTimeout(() => {
+                    window.navigator.vibrate([300, 100, 300]); //love
+                    setTimeout(() => {
+                        window.navigator.vibrate([300, 100, 300, 100, 300]); //laugh
+                        setTimeout(() => {
+                            window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300, 100, 300]); //angry
+                        }, 10000);
+                    }, 10000);
+                }, 10000);
+            }, 10000);
+        },10000);
+    });
+});
+    </script>
+</body>
+
+
+
