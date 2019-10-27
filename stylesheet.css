@@ -10,10 +10,10 @@
 }
 .ui.button.send{
     position: absolute;
-    top:40%;
-    left:40%;
-    width: 10%;
-    height:50%;
+    top:30%;
+    left:50%;
+    width: 20%;
+    height:30%;
 }
 img.send{
     width:100px
