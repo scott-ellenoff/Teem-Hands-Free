@@ -25,15 +25,7 @@ $(document).ready(function(){
         if($(this).val() == "like"){
             choice = "like";
             if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".like").toggle();
-            $(".wow").hide();
-        }
-        else if($(this).val() == "like"){
-            choice = "like";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
+                window.navigator.vibrate(300);
             }
             $(".love").toggle();
             $(".like").hide();
@@ -41,97 +33,105 @@ $(document).ready(function(){
         else if($(this).val() == "love"){
             choice = "love";
             if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".angry").toggle();
-            $(".love").hide();
-        }
-        if($(this).val() == "angry"){
-            choice = "angry";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".sad").toggle();
-            $(".angry").hide();
-        }
-        if($(this).val() == "sad"){
-            choice = "sad";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
+                window.navigator.vibrate([300, 100, 300]);
             }
             $(".laugh").toggle();
-            $(".sad").hide();
+            $(".love").hide();
         }
-        if($(this).val() == "laugh"){
+        else if($(this).val() == "laugh"){
             choice = "laugh";
             if(!ios){
-                window.navigator.vibrate([200,200]);
+                window.navigator.vibrate([300, 100, 300, 100, 300]);
             }
-            $(".cancel").toggle();
+            $(".wow").toggle();
             $(".laugh").hide();
         }
-        if($(this).val() == "cancel"){
-            choice = "";
-            $(".wow").toggle();
-            $(".cancel").hide();
-        }
-    });
-    $(".choose").on("click", function(){
-        alert(ios);
         if($(this).val() == "wow"){
             choice = "wow";
             if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".like").toggle();
-            $(".wow").hide();
-        }
-        else if($(this).val() == "like"){
-            choice = "like";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".love").toggle();
-            $(".like").hide();
-        }
-        else if($(this).val() == "love"){
-            choice = "love";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
-            }
-            $(".angry").toggle();
-            $(".love").hide();
-        }
-        if($(this).val() == "angry"){
-            choice = "angry";
-            if(!ios){
-                window.navigator.vibrate([200,200]);
+                window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300]);
             }
             $(".sad").toggle();
-            $(".angry").hide();
+            $(".wow").hide();
         }
         if($(this).val() == "sad"){
             choice = "sad";
             if(!ios){
-                window.navigator.vibrate([200,200]);
+                window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300]);
             }
-            $(".laugh").toggle();
+            $(".angry").toggle();
             $(".sad").hide();
         }
-        if($(this).val() == "laugh"){
-            choice = "laugh";
+        if($(this).val() == "angry"){
+            choice = "angry";
             if(!ios){
-                window.navigator.vibrate([200,200]);
+                window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300, 100, 300]);
             }
-            $(".cancel").toggle();
-            $(".laugh").hide();
+//             $(".cancel").toggle();
+            $(".angry").hide();
         }
-        if($(this).val() == "cancel"){
-            choice = "";
-            $(".wow").toggle();
-            $(".cancel").hide();
-        }
-    });
+//         if($(this).val() == "cancel"){
+//             choice = "";
+//             $(".like").toggle();
+//             $(".cancel").hide();
+//         }
+//     });
+//     $(".choose").on("click", function(){
+//         alert(ios);
+//         if($(this).val() == "wow"){
+//             choice = "wow";
+//             if(!ios){
+//                 window.navigator.vibrate([200,200]);
+//             }
+//             $(".like").toggle();
+//             $(".wow").hide();
+//         }
+//         else if($(this).val() == "like"){
+//             choice = "like";
+//             if(!ios){
+//                 window.navigator.vibrate([200,200]);
+//             }
+//             $(".love").toggle();
+//             $(".like").hide();
+//         }
+//         else if($(this).val() == "love"){
+//             choice = "love";
+//             if(!ios){
+//                 window.navigator.vibrate([200,200]);
+//             }
+//             $(".angry").toggle();
+//             $(".love").hide();
+//         }
+//         if($(this).val() == "angry"){
+//             choice = "angry";
+//             if(!ios){
+//                 window.navigator.vibrate([200,200]);
+//             }
+//             $(".sad").toggle();
+//             $(".angry").hide();
+//         }
+//         if($(this).val() == "sad"){
+//             choice = "sad";
+//             if(!ios){
+//                 window.navigator.vibrate([200,200]);
+//             }
+//             $(".laugh").toggle();
+//             $(".sad").hide();
+//         }
+//         if($(this).val() == "laugh"){
+//             choice = "laugh";
+//             if(!ios){
+//                 window.navigator.vibrate([200,200]);
+//             }
+//             $(".cancel").toggle();
+//             $(".laugh").hide();
+//         }
+//         if($(this).val() == "cancel"){
+//             choice = "";
+//             $(".wow").toggle();
+//             $(".cancel").hide();
+//         }
+//     });
     $(".send").click(function(){
         console.log(choice);
     });
