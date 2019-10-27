@@ -20,12 +20,12 @@
             <h1>Receiving A</h1>
     </div>
     <div>
-                <button id="stop" type="button" class="btn btn-danger btn-lg btn-block">Start</button>
+                <button id="start" type="button" class="btn btn-danger btn-lg btn-block">Start</button>
     </div>
     <script>
         $(document).ready(function(){
-    $(".start").click(function(){
-        $(".start").hide();
+    $("#start").click(function(){
+        $("#start").hide();
         window.navigator.vibrate([300]);  //like
         setTimeout(function(){
             window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300]); //sad
