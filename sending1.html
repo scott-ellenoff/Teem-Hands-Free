@@ -7,8 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <script src="window1.js"></script>
-</head>a
+  
+</head>
 <body>
     <button class="ui button like" val="like">
         <img class="react" name="like" src= "https://miro.medium.com/max/380/0*fcSvcwzGEMI4fcUs.jpg"/> 
@@ -29,4 +29,40 @@
     <button class="ui button send" val="send">
         <img class="send" name="send" src="https://image.flaticon.com/icons/svg/60/60525.svg" />
     </button>
+<script>
+    $(document).ready(function(){
+    var ios = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    var choice = ""
+    $(".button.send").click(function(){
+        console.log(choice);
+        choice = ""
+        window.navigator.vibrate([200]);
+    });
+    $(".wow").click(function(){
+        choice = "wow"
+        if(!ios) window.navigator.vibrate([400, 200, 400]);
+    });
+    $(".like").click(function(){
+        choice = "like"
+        if(!ios) window.navigator.vibrate([300,600,100]);
+    });
+    $(".love").click(function(){
+        choice = "love"
+        if(!ios) window.navigator.vibrate([175,100, 175, 100, 175, 100,175]);
+    });
+    $(".angry").click(function(){
+        choice = "angry"
+        if(!ios) window.navigator.vibrate(1000);
+    });
+    $(".sad").click(function(){
+        choice = "sad"
+        if(!ios) window.navigator.vibrate([100,800,100]);
+    });
+    $(".laugh").click(function(){
+        choice = "laugh"
+        if(!ios) window.navigator.vibrate([100, 50, 100,50 , 200, 50, 250]);
+    });
+});
+</script>
+    
 </body>
