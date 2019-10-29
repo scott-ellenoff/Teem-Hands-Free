@@ -38,17 +38,17 @@
       
           
         setTimeout(function(){
-            window.navigator.vibrate(300); //like
+            window.navigator.vibrate([300,600,100]); //like
             setTimeout(() => {
-                window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300]); //sad
+                window.navigator.vibrate([100,800,100]); //sad
                 setTimeout(() => {
-                    window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300]); //wow
+                    window.navigator.vibrate([400, 200, 400]); //wow
                     setTimeout(() => {
-                        window.navigator.vibrate([300, 100, 300]); //love
+                        window.navigator.vibrate([175,100, 175, 100, 175, 100,175]); //love
                         setTimeout(() => {
-                            window.navigator.vibrate([300, 100, 300, 100, 300]); //laugh
+                            window.navigator.vibrate([100, 50, 100,50 , 200, 50, 250]); //laugh
                             setTimeout(() => {
-                                window.navigator.vibrate([300, 100, 300, 100, 300, 100, 300, 100, 300, 100, 300]); //angry
+                                window.navigator.vibrate(1000); //angry
                             }, 10000);
                         }, 10000);
                     }, 10000);
